@@ -1,0 +1,119 @@
+html, body {
+  font-family: Arial, sans-serif;
+  background-image: url('3320.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.85);
+  border: 3px solid rgba(0,233,255,1);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filters {
+  margin: 10px 0;
+}
+
+.filters button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;         
+  border-radius: 12px;             
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(180,220,0,0.5); 
+  background: #fafafa;            /* nền sáng nhẹ */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+li:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #f0f8ff;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+li button i {
+  color: #888;
+  font-size: 18px;
+  /* transition: color 0.2s ease; */
+}
+
+li button i:hover {
+  color: red;
+}
+
+li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
